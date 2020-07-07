@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awsome/4.7.0/font-owsome.min.css">
+<style>
+  body {
+        font-family: 'Lato', sans-serif;
+      }
+      
+      .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+      }
+
+      * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </style>
+      </head>
+      <body style="background-color: brown;">
+      
+      
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="home page.html">Home page</a>
+          <a href="about me.html">About me</a>
+          <a href="contacts.html">Contacts</a>
+          <a href="https://mtouch.facebook.com/home.php?_rdr"><img src="face.png" alt="facebook" class="center" width="60px" height="40px"></a>
+        <a href="https://www.instagram.com/?hl=en"><img src="social.png" alt="instagram" class="center" width="60px" height="40px"></a>
+
+        </div>
+      </div>
+      
+  
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      <h1>ABOUT ME</h1>
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="miya.jpg" alt="Me" style="width:100%">
+        <h3>My SELF</h3>
+        <p>My name is SIBONGILE NKENTE , i live in khayelitsha site b, i live with my uant and my younger sister . I am  smart and inteligent and i've got dream to achieve.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="stella.jpg" alt="school" style="width:100%">
+        <h3>Education</h3>
+        <p> I leaned in Isaac Makau Primary School  then I went to Bethel jss and i did my higher grades in Cunningham Sinior Secondary school , that's were i passed my grade 12 with a bachelor.</p> 
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="belt.jpg" alt="belt" style="width:100%">
+      
+        <h3>Sport</h3>
+        <p>My  favourite sport is cricket, i love cricket  with my all many people think that cricket is for boys/man but in reality is for all us both girls and boys.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <img src="js.png" alt="js" style="width:100%">
+        <h3>My goals & dreams</h3>
+        <p>My goal is to become the best software developer in the world. I want to give back to my community by providing jobs to the youth of south africa  so that they can uplift their standard of living in their homes.</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  
+  <div class="content">
+    
+    <img src="html.jpg" alt="html" style="width: 50%;"><img src="js.png" alt="js" style="width:50%">
+    <h3>My Work</h3>
+    <p> I am an intern in younglings,Before joining Younglings I was an eager, post high school student that didn’t have many options when it came to tertiary education.   I joined that and went on to do a six month course on web dev and mobile development. 
+  Being part of Younglings I have learned and grown so much as both a software developer, and a person. The technical skills I obtained are quite wide spread and vary from cross platform mobile dev, to mainstream website dev . All of these have made me into a wanna-be full stack developer that can create just about anything..</p>
+    <p>I don’t pretend to know it all though, I just know that I’ve learned enough to be able to adapt to any situation/problem/product that comes my way. This would be the most important skill that I learned while being a part of younglings: The ability to teach myself.
+
+      In the long term I wanna become whatever position challenges me the most.   I was dead sure I would be a web developer. The field changes so rapidly that I don’t think you can really stick to one position as one would in a different career, and as scary as that might sound, Younglings gives you the freedom to hop around and get a good scope of all the different fields. This gift is invaluable and I am truly grateful for the freedom to express and play around to find where I fit in..</p>
+  </div>
+  
+  <!-- END MAIN -->
+  </div>
+
+
+
+
+
+
+
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+           
+      </body>
+      </html>
+      
+</style>
+</head>
+
+

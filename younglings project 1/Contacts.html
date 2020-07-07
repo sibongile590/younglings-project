@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awsome/4.7.0/font-owsome.min.css">
+<style>
+ body {
+        font-family: 'Lato', sans-serif;
+      }
+      
+      .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+      }
+
+
+      body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid brown;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+ </style>
+      </head>
+      <body style="background-color: brown;">
+      <body>
+      
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="home page.html">Home page</a>
+          <a href="about me.html">About me</a>
+          <a href="contact.html">Contacts</a>
+          <a href="https://mtouch.facebook.com/home.php?_rdr"><img src="face.png" alt="facebook" class="center" width="60px" height="40px"></a>
+        <a href="https://www.instagram.com/?hl=en"><img src="social.png" alt="instagram" class="center" width="60px" height="40px"></a>
+
+        </div>
+      </div>
+      
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      <div class="title"></div>
+      <h1>CONTACTS</h1>
+ <h2> Contact Section</h2>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact me</h2>
+    <p>Swing by for a visit, or leave me a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="nkente.jpg" style="width:50%">
+<div class="footer">
+  <p> cell:0633315213</p>
+  <p>"Adress : Y104 Xapile crescent"</p>
+  <br>
+  <p>"Khayelitsha , 7784, site b"</p>
+</div>
+ </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">Email Adress</label>
+        <input type="text" id="email" name="email" placeholder="Your email adress..">
+         <label for="contact">Contact Number</label> 
+        <input type="text" id="contact" name="contact" placeholder="Your contact number..">
+ <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="south africa">South Africa</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+      
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+           
+      </body>
+      </html>
+      
+</style>
+
